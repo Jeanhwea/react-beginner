@@ -10,10 +10,13 @@ export default function Counter() {
   }
 
   useEffect(() => {
-    document.title = `you clicked ${count} times`
+    // document.title = `you clicked ${count} times`
     setTimeout(() => {
       console.log('count = ', count);
     }, 3000)
+    return () => {
+      console.log('Clean Up Callback, count = ', count);
+    }
   })
 
   return (
