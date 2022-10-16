@@ -1,9 +1,13 @@
 import './App.css';
-import Counter from "./components/Counter";
+import Page1 from "./pages/page1";
+import Page2 from "./pages/page2";
 
 function App() {
   return (
-    <Counter />
+    <div>
+      {/*<Page1 />*/}
+      <Page2 />
+    </div>
   );
 }
 
